@@ -46,9 +46,9 @@ class Laser:
 
 
 class Ship:
-    COOLDOWN = 30
+    COOLDOWN = 10
 
-    def __init__(self, x, y, health=100):
+    def __init__(self, x, y, health=200):
         self.x = x
         self.y = y
         self.health = health
@@ -150,9 +150,9 @@ def collide(obj1, obj2):
 
 def main():
     run = True
-    FPS = 60
+    FPS = 80
     level = 0
-    lives = 5
+    lives = 10
     main_font = pygame.font.SysFont("comicsans", 50)
     lost_font = pygame.font.SysFont("comicsans", 60)
 
